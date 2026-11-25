@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="ru"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<script>(function(){try{var m=location.search.match(/[?&]v=(desktop|mobile)/),f=m&&m[1];if(f){try{sessionStorage.setItem("mm_v",f)}catch(e){}}else{try{f=sessionStorage.getItem("mm_v")}catch(e){}}if(f)return;var ph=matchMedia("(pointer:coarse)").matches&&Math.min(screen.width,screen.height)<=600;if(!ph)location.replace("../site-main/index.html"+location.search+location.hash)}catch(e){}})();
+</script>
+
+<script>(function(){try{if("scrollRestoration"in history)history.scrollRestoration="manual"}catch(e){}try{if(location.hash)history.replaceState(null,"",location.pathname+location.search)}catch(e){}var hu=0,t1=0;["touchstart","wheel","keydown","mousedown"].forEach(function(e){addEventListener(e,function(){hu=1},{passive:true,capture:true})});function top(){if(!hu&&(window.scrollY||document.documentElement.scrollTop))window.scrollTo(0,0)}top();addEventListener("DOMContentLoaded",top);function arm(){t1=Date.now()+1500;top();requestAnimationFrame(top);[60,160,320,650,1e3,1500].forEach(function(d){setTimeout(top,d)})}addEventListener("load",arm);addEventListener("pageshow",function(e){if(e.persisted)arm()});addEventListener("scroll",function(){if(Date.now()<t1)top()},{passive:true});addEventListener("pageshow",function(e){if(e.persisted)top()})})();
+</script>
+<link rel="preload" href="../build/fonts/Onest-var.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="../build/fonts/Rubik.ttf" as="font" type="font/ttf" crossorigin>
+<script>(function(){var D=document.documentElement,M=!matchMedia("(prefers-reduced-motion:reduce)").matches;if(M)D.classList.add("ulj");function esc(x){return x.replace(/&/g,"&amp;").replace(/</g,"&lt;")}function split(h){if(h._o==null)h._o=h.innerHTML;else h.innerHTML=h._o;[].forEach.call(h.querySelectorAll("em"),function(em,ei){var ws=em.textContent.split(/\s+/).filter(Boolean);em.innerHTML=ws.map(function(w2){return'<span class="wd">'+esc(w2)+"</span>"}).join(" ");var g=[],cur=null,top=null;[].forEach.call(em.children,function(sp2){var r=sp2.getBoundingClientRect();if(top===null||Math.abs(r.top-top)>4){cur=[];g.push(cur);top=r.top}cur.push(sp2.textContent)});var w=document.createElement("span");w.innerHTML=g.map(function(x){return'<span class="acc" data-e="'+ei+'"><em>'+esc(x.join(" "))+'</em><span class="ul"></span></span>'}).join(" ");var f=document.createDocumentFragment();while(w.firstChild)f.appendChild(w.firstChild);em.parentNode.replaceChild(f,em)});for(var k=0;k<4;k++){var A=h.querySelectorAll(".acc"),m=0;for(var i=0;i+1<A.length;i++){var a=A[i],b=A[i+1];if(a.dataset.e===b.dataset.e&&Math.abs(a.getBoundingClientRect().top-b.getBoundingClientRect().top)<4){a.firstChild.textContent+=" "+b.firstChild.textContent;var sp=b.previousSibling;if(sp&&sp.nodeType===3)sp.remove();b.remove();m=1;break}}if(!m)break}return[].map.call(h.querySelectorAll(".acc"),function(a2){return a2.textContent}).join("|")}document.addEventListener("DOMContentLoaded",function(){var H=[].filter.call(document.querySelectorAll("h1,h2"),function(h){return h.querySelector("em")}),sig=H.map(split);function re(){H.forEach(function(h,i){var o=h.innerHTML,s=split(h);if(s===sig[i]){h.innerHTML=o;return}sig[i]=s});if(M)up()}if(document.fonts&&document.fonts.ready)document.fonts.ready.then(re);addEventListener("load",re);var W=innerWidth,rt;addEventListener("resize",function(){if(innerWidth===W)return;W=innerWidth;clearTimeout(rt);rt=setTimeout(re,150)});function up(){}if(!M)return;var T0=performance.now(),vis0=H.map(function(h){return h.getBoundingClientRect().top<innerHeight*.66}),run=0;var cl=function(x){return x<0?0:x>1?1:x},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};up=function(){var vh=innerHeight,hh=parseFloat(getComputedStyle(D).getPropertyValue("--hh"))||56,now=performance.now(),more=0;H.forEach(function(h,i){[].forEach.call(h.querySelectorAll(".acc"),function(a,j){var r=a.getBoundingClientRect(),b=r.bottom;var u;if(vis0[i]){var it=cl((now-T0-350-j*900)/900);if(it<1)more=1;u=it}else u=cl((vh*.8-b)/(vh*.3));u=eio(u);var v=u>=1?"none":"inset(0 "+((1-u)*100).toFixed(2)+"% 0 0)";if(a._v!==v){a._v=v;var e=a.lastChild;e.style.webkitClipPath=v;e.style.clipPath=v;e.style.opacity=u<.15?cl((u-.03)/.12).toFixed(2):""}})});if(more&&!run){run=1;requestAnimationFrame(function(){run=0;up()})}};var q=0;function tick(){if(q)return;q=1;requestAnimationFrame(function(){q=0;up()})}addEventListener("scroll",tick,{passive:true});addEventListener("resize",tick);up()})})();
+</script>
+<title>mAInmodeL — главная (мобильная, без анимации)</title>
+<style>
+@font-face{font-family:Onest;src:url(../build/fonts/Onest-var.ttf) format('truetype');font-weight:100 900;font-display:swap}
+@font-face{font-family:Rubik;src:url(../build/fonts/Rubik.ttf) format('truetype');font-weight:300 900;font-display:swap}
+:root{--hh:68px;--red:#C8102E;--ink:#141414}
+#hdr{position:fixed;left:0;right:0;top:0;height:var(--hh);z-index:20;display:flex;align-items:center;gap:44px;padding:0 var(--gx,clamp(16px,3vw,40px));
+ background:rgba(255,255,255,.88);-webkit-backdrop-filter:blur(18px) saturate(1.4);backdrop-filter:blur(18px) saturate(1.4);
+ box-shadow:0 1px 0 rgba(20,20,20,.08),0 6px 18px rgba(20,20,20,.035);font-family:Onest,-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+#hdr a{text-decoration:none;color:inherit}
+#hdr .lg{font-family:Rubik,Onest,sans-serif;font-size:27px;font-weight:400;letter-spacing:-.03em;color:var(--ink);white-space:nowrap;line-height:1}
+#hdr .lg b{color:var(--red);font-weight:700}
+#hdr nav{display:flex;gap:6px}
+#hdr nav a{position:relative;display:inline-flex;flex-direction:column;align-items:center;padding:9px 14px;border-radius:999px;font-size:16px;font-weight:500;color:#4A4F57;white-space:nowrap;transition:color .2s,background .2s}
+
+#hdr nav a:before{content:attr(data-t);font-weight:600;height:0;overflow:hidden;visibility:hidden}
+#hdr nav a:not(.on):hover{color:var(--ink);background:rgba(20,20,20,.05)}
+#hdr nav a.on{color:var(--ink);font-weight:600}
+#hdr nav a.on:after{content:'';position:absolute;left:50%;bottom:1px;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:var(--red)}
+#hdr .cta{margin-left:auto;display:flex;align-items:center;gap:10px;height:44px;padding:0 22px;border-radius:999px;background:var(--red);color:#fff!important;
+ font-size:16px;font-weight:600;white-space:nowrap;box-shadow:0 1px 2px rgba(20,20,20,.12);transition:background .2s}
+#hdr .cta:hover{background:#A90D26}
+#hdr .cta svg{width:16px;height:16px}
+#hdr .cta i{font-style:normal}
+@media (max-width:760px){:root{--hh:56px}#hdr{gap:12px}#hdr nav{display:none}#hdr .lg{font-size:22px}#hdr .cta{height:34px;padding:0 14px;gap:6px;font-size:14px}#hdr .cta i{display:none}#hdr .cta svg{width:14px;height:14px}#tc{display:none}}
+
+
+#ftr{position:relative;z-index:5;margin-top:-16vh;border-radius:32px 32px 0 0;box-shadow:0 -12px 40px rgba(15,15,17,.18);background:#0F0F11;color:#C9CBD0;font-family:Onest,-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;font-size:15px;line-height:1.5}
+#ftr a{color:inherit;text-decoration:none;transition:color .2s}
+#ftr a:hover{color:#fff}
+#ftr .fi{max-width:1280px;margin:0 auto;padding:72px clamp(16px,3vw,40px) 48px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:48px}
+#ftr .lg{font-family:Rubik,Onest,sans-serif;font-size:30px;letter-spacing:-.03em;color:#fff;line-height:1}
+#ftr .lg b{color:var(--red);font-weight:700}
+#ftr .fb p{margin:18px 0 24px;max-width:340px;color:#9A9DA4}
+#ftr .soc{display:flex;gap:10px}
+#ftr .soc a{display:block;width:36px;height:36px;border-radius:10px;background:#26262B;display:flex;align-items:center;justify-content:center;transition:background .2s}
+#ftr .soc a:hover{background:#33333A}
+#ftr .soc svg{width:22px;height:22px}#ftr .fc .msg{margin:2px 0 6px;gap:12px}#ftr .fc .msg a{width:44px;height:44px;padding:0}#ftr .fc .msg svg{width:28px;height:28px}
+#ftr h4{margin:4px 0 18px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+#ftr .fc{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+#ftr .fc .t{color:#9A9DA4;font-size:14px}
+#ftr .fc .ml{color:#fff;font-size:15px;font-weight:500;padding:4px 0}#ftr .fc .ml:hover{color:var(--red)}
+#ftr .fc .cta2{margin-top:8px;display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 20px;border-radius:999px;background:var(--red);color:#fff;font-weight:600}
+#ftr .fc .cta2:hover{background:#A90D26}
+#ftr .fl{max-width:1280px;margin:0 auto;padding:22px clamp(16px,3vw,40px) 28px;border-top:1px solid #222227;display:flex;flex-wrap:wrap;gap:8px 28px;font-size:13px;color:#8E9198}
+#ftr .fl span{margin-right:auto}
+@media (max-width:900px){#ftr .fi{grid-template-columns:1fr 1fr;gap:36px 24px;padding-top:48px}#ftr .fb{grid-column:1/-1}}
+@media (max-width:480px){#ftr .fi{grid-template-columns:1fr}#ftr .fl{flex-direction:column;gap:0}#ftr .fl a{padding:9px 0}#ftr .fl span{margin:0 0 6px}}
+
+#askB{position:absolute;left:50%;top:0;transform:translate(-50%,12px);opacity:0;pointer-events:none;z-index:4;display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 30px;border:0;border-radius:999px;
+ background:var(--red);color:#fff;font:600 18px Onest,-apple-system,'Helvetica Neue',Arial,sans-serif;cursor:pointer;white-space:nowrap;box-shadow:0 1px 2px rgba(20,20,20,.12);transition:background .2s}
+#askB:hover{background:#A90D26}
+#askB.on{pointer-events:auto}
+#askB svg{width:18px;height:18px}
+#ask{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:16px;font-family:Onest,-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+#ask[hidden]{display:none}
+#ask .bd{position:absolute;inset:0;background:rgba(15,15,17,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);animation:askF .25s ease}
+#ask .box{position:relative;width:100%;max-width:460px;max-height:calc(100vh - 32px);overflow:auto;box-sizing:border-box;background:#fff;border-radius:24px;padding:36px 36px 28px;box-shadow:0 30px 80px rgba(0,0,0,.3);animation:askU .3s cubic-bezier(.2,.8,.2,1)}
+@keyframes askF{from{opacity:0}}@keyframes askU{from{opacity:0;transform:translateY(16px) scale(.98)}}
+#ask .x{position:absolute;right:14px;top:14px;width:36px;height:36px;border:0;border-radius:50%;background:#F1F2F4;color:#4A4F57;font-size:22px;line-height:36px;cursor:pointer}
+#ask .x:hover{background:#E4E5E8}
+#ask h3{margin:0 0 8px;font-size:26px;line-height:1.15;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+#ask p{margin:0 0 22px;color:#5F636B;font-size:15px;line-height:1.45}
+#ask label{display:block;margin-bottom:14px;font-size:13px;font-weight:600;color:#4A4F57}
+#ask input,#ask textarea{display:block;width:100%;box-sizing:border-box;margin-top:6px;padding:13px 14px;border:1.5px solid #DDDFE3;border-radius:12px;font:400 16px Onest,-apple-system,Arial,sans-serif;color:var(--ink);background:#FAFAFB;outline:none;resize:vertical;transition:border-color .2s,background .2s}
+#ask input:focus,#ask textarea:focus{border-color:var(--ink);background:#fff}
+#ask .bad input{border-color:var(--red);background:#FFF6F7}
+
+#ask .pw{position:relative;display:block;margin-top:6px}#ask .pw input{margin-top:0}
+#ask .gh{position:absolute;left:15.5px;top:14.5px;right:15.5px;font:400 16px Onest,-apple-system,Arial,sans-serif;line-height:normal;white-space:pre;overflow:hidden;pointer-events:none;color:#A6A9B0}#ask .gh i{font-style:normal;color:transparent}#ask .gh b{font-weight:400}
+
+#ask .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+#ask .sf{margin:12px 0 0;color:var(--red);font-size:13px;line-height:1.45}#ask .sf[hidden]{display:none}#ask .sf a{color:inherit}
+#ask .sb:disabled{opacity:.6;cursor:default}
+#ask .rq{margin-left:3px;color:var(--red);font-weight:700}
+#ask .er{display:none;margin-top:5px;color:var(--red);font-weight:500}
+#ask .bad .er{display:block}
+#ask .sb{width:100%;height:52px;margin-top:6px;border:0;border-radius:999px;background:var(--red);color:#fff;font:600 17px Onest,-apple-system,Arial,sans-serif;cursor:pointer;transition:background .2s}
+#ask .sb:hover{background:#A90D26}
+#ask small{display:block;margin-top:14px;color:#8E9198;font-size:12px;line-height:1.45;text-align:center}
+#ask small a{color:inherit}
+#ask .ok{text-align:center;padding:12px 0 4px}
+#ask .ok i{display:flex;align-items:center;justify-content:center;width:64px;height:64px;margin:0 auto 18px;border-radius:50%;background:#FDECEF}
+
+#pp{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:16px;font-family:Onest,-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+#pp[hidden]{display:none}
+#pp .bd{position:absolute;inset:0;background:rgba(15,15,17,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);animation:askF .25s ease}
+#pp .box{position:relative;display:flex;flex-direction:column;width:100%;max-width:720px;max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);box-sizing:border-box;background:#fff;border-radius:24px;padding:clamp(24px,4vw,36px) clamp(18px,4vw,36px) 0;box-shadow:0 30px 80px rgba(0,0,0,.3);animation:askU .3s cubic-bezier(.2,.8,.2,1)}
+#pp .x{position:absolute;right:14px;top:14px;width:36px;height:36px;border:0;border-radius:50%;background:#F1F2F4;color:#4A4F57;font-size:22px;line-height:36px;cursor:pointer;z-index:1}
+#pp .x:hover{background:#E4E5E8}
+#pp h3{margin:0 44px 12px 0;font-size:clamp(21px,3vw,26px);line-height:1.15;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+#pp .pt{overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:0 6px 28px 0;color:#4A4F57;font-size:14px;line-height:1.55}
+#pp .pt h4{margin:20px 0 6px;font-size:15px;line-height:1.3;font-weight:700;color:var(--ink)}
+#pp .pt p{margin:0 0 8px}#pp .pt ul{margin:0 0 8px;padding-left:20px}#pp .pt li{margin:0 0 4px}
+#pp .box:focus{outline:none}
+#pp [data-doc][hidden]{display:none}#pp .pt .ed{color:#8E9198;font-size:13px}
+@media (max-width:760px){#askB{height:42px;padding:0 18px;font-size:14px;gap:0}#askB svg{display:none}#ask .box{padding:30px 22px 22px;border-radius:20px}#ask h3{font-size:22px}}
+
+#ck{position:fixed;right:20px;bottom:20px;z-index:40;width:min(400px,calc(100vw - 32px));box-sizing:border-box;background:#fff;color:var(--ink);border-radius:20px;padding:20px 20px 18px;box-shadow:0 18px 50px rgba(0,0,0,.18),0 0 0 1px rgba(0,0,0,.06);font:400 14px/1.5 Onest,-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;transform:translateY(16px);opacity:0;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .35s}
+#ck.on{transform:none;opacity:1}#ck[hidden]{display:none}
+#ck b{display:block;font-size:16px;line-height:1.3;font-weight:700;margin-bottom:6px}
+#ck p{margin:0 0 14px;color:#4A4F57}#ck p a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+#ck .cb{display:flex;gap:8px}
+#ck button{flex:1;height:44px;padding:0 12px;border:0;border-radius:999px;font:600 14px Onest,-apple-system,Arial,sans-serif;cursor:pointer;transition:background .2s;white-space:nowrap}
+#ck .ya{background:var(--red);color:#fff}#ck .ya:hover{background:#A90D26}
+#ck .no{background:#F1F2F4;color:var(--ink)}#ck .no:hover{background:#E4E5E8}
+@media (max-width:760px){#ck{left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));width:auto;padding:18px 16px 16px}}
+
+
+:root{--hh:56px;--mut:#666B72;--gx:18px}
+*{box-sizing:border-box}
+html{scroll-behavior:auto;-webkit-text-size-adjust:100%}
+html,body{margin:0;background:#ECEDEF}
+body{font-family:Onest,-apple-system,'Helvetica Neue',Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+#hdr{max-width:480px;left:50%;right:auto;width:100%;transform:translateX(-50%);gap:12px;padding:0 var(--gx)}
+#hdr nav{display:none}#hdr .lg{font-size:22px}
+
+#hdr .mn{margin-left:auto;flex:none;position:relative;width:38px;height:34px;padding:0;border:0;border-radius:999px;background:rgba(20,20,20,.06);cursor:pointer;-webkit-tap-highlight-color:transparent;color:var(--ink)}
+#hdr .mn i{position:absolute;left:11px;width:16px;height:2px;border-radius:2px;background:currentColor;transition:transform .25s,opacity .2s}
+#hdr .mn i:nth-child(1){top:11px}#hdr .mn i:nth-child(2){top:16px}#hdr .mn i:nth-child(3){top:21px}
+#hdr .mn.x i:nth-child(1){transform:translateY(5px) rotate(45deg)}#hdr .mn.x i:nth-child(2){opacity:0}#hdr .mn.x i:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+#hdr .mn:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+#hdr .mn+.cta{margin-left:0}
+#mnu{position:fixed;top:var(--hh);left:50%;z-index:19;width:100%;max-width:480px;padding:4px var(--gx) 12px;background:#fff;border-radius:0 0 20px 20px;box-shadow:0 18px 30px rgba(28,32,40,.12);opacity:0;transform:translate(-50%,-8px);transition:opacity .22s,transform .22s}
+#mnu.on{opacity:1;transform:translate(-50%,0)}
+#mnu a{display:flex;align-items:center;gap:12px;min-height:54px;font-size:20px;font-weight:600;letter-spacing:-.01em;color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(20,20,20,.07);-webkit-tap-highlight-color:transparent}
+#mnu a:last-child{border-bottom:0}
+#mnu a:before{content:'';flex:none;width:12px;height:4px;border-radius:2px;background:var(--red)}
+#mnu a:after{content:'→';margin-left:auto;color:#9AA0A8;font-weight:500}
+#mnu a:active{color:var(--red)}#hdr .cta{height:34px;padding:0 14px;gap:6px;font-size:14px}#hdr .cta i{display:none}#hdr .cta svg{width:14px;height:14px}
+.col{max-width:480px;margin:0 auto;padding-top:var(--hh);background:#ECEDEF;position:relative;overflow:hidden}
+section{scroll-margin-top:calc(var(--hh) + 8px)}
+em{font-style:normal;color:var(--red)}
+
+.acc{position:relative;display:inline-block;white-space:nowrap;line-height:1.15}
+.acc .ul{position:absolute;left:-5.12%;width:110.24%;bottom:-.137em;height:.275em;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -1 106 12' preserveAspectRatio='none'%3E%3Cpath d='M1 7 C 25 3, 55 2, 99 5' fill='none' stroke='%23C8102E' stroke-width='4.5' stroke-linecap='round'/%3E%3C/svg%3E") 0 0/100% 100% no-repeat}
+h1 .acc{line-height:1.12}h1 .acc .ul{bottom:-.169em;height:.275em;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -1 106 12' preserveAspectRatio='none'%3E%3Cpath d='M1 7 C 25 3, 55 2, 99 5' fill='none' stroke='%23C8102E' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E")}
+.acc.nb{line-height:1}.acc.nb .ul{bottom:-.028em;height:.136em;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -1 106 12' preserveAspectRatio='none'%3E%3Cpath d='M1 7 C 25 3, 55 2, 99 5' fill='none' stroke='%23C8102E' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E")}
+.acc.kw{line-height:1}.acc.kw .ul{bottom:-.096em;height:.192em;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -1 106 12' preserveAspectRatio='none'%3E%3Cpath d='M1 7 C 25 3, 55 2, 99 5' fill='none' stroke='%23C8102E' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E")}
+.sec{padding:44px var(--gx) 44px}
+
+.hero,#v1,#v3{background:#E3E5E9}#tri,#v2{background:#F6F7F9}
+h1,h2{margin:0;font-weight:700;letter-spacing:-.035em;color:var(--ink)}
+.hero{padding:28px var(--gx) 40px}
+h1{font-size:min(11vw,52px);line-height:1.12}
+h1 span{display:block;white-space:nowrap}h1 .wd,h2 .wd{display:inline}
+h2{font-size:min(9.2vw,40px);line-height:1.13;text-wrap:balance}
+.sub{margin:10px 0 0;font-size:18px;line-height:1.35;color:var(--mut);font-weight:500;letter-spacing:-.01em}
+
+.ph{position:relative;width:min(74%,300px);margin:30px auto 8px;aspect-ratio:432/748;border-radius:min(13vw,52px);background:#fff;padding:min(2.4vw,10px);
+ box-shadow:0 30px 70px rgba(28,32,40,.16),0 6px 18px rgba(28,32,40,.08),0 0 0 1px rgba(0,0,0,.06) inset}
+.phS{position:relative;width:100%;height:100%;border-radius:min(10.6vw,42px);overflow:hidden;background:#E3E5E8;isolation:isolate}
+.phS video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.phS:after{content:'';position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(to top,rgba(0,0,0,.6),transparent);z-index:1}
+.phS:before{content:'';position:absolute;left:0;right:0;top:0;height:18%;background:linear-gradient(to bottom,rgba(0,0,0,.45),transparent);z-index:1}
+.phS .tb{position:absolute;left:0;right:0;top:9%;z-index:3;text-align:center;color:#fff;font-size:14px;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,.5)}
+.phS .tb i{font-style:normal;opacity:.7;font-weight:500;margin-right:14px}
+.phS .isl{position:absolute;left:50%;top:2.2%;width:24%;height:3.5%;margin-left:-12%;border-radius:14px;background:#141414;z-index:4}
+.phS .who{position:absolute;left:14px;right:14px;bottom:5%;z-index:3;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.5)}
+.phS .u{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700}
+.phS .av{width:28px;height:28px;border-radius:8px;background:var(--red);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;flex:none}
+.phS .fl{border:1.5px solid #fff;border-radius:8px;padding:2px 8px;font-size:13px;font-weight:600;white-space:nowrap}
+.phS .c{margin-top:8px;font-size:14px;font-weight:500}
+@media (max-width:420px){.phS .who{left:10px;right:10px}.phS .u{gap:5px;font-size:13px}.phS .av{width:24px;height:24px;font-size:13px}.phS .fl{padding:2px 6px}}
+.phS .u{min-width:0}.phS .fl{margin-left:auto}
+
+.tg{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 18px 0 6px;margin-bottom:16px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 8px 24px rgba(28,32,40,.1),0 0 0 1px rgba(0,0,0,.04)}
+.tg .bd{width:32px;height:32px;border-radius:50%;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+.tg .tx{display:flex;gap:8px;align-items:baseline;font-size:15px;font-weight:600;white-space:nowrap}
+.tg .ey{color:var(--mut);font-weight:500}
+
+.tiles{display:flex;flex-direction:column;gap:16px;margin-top:24px}
+.tile{display:block;width:min(74%,300px);margin:0 auto;text-decoration:none;color:inherit;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 14px 40px rgba(28,32,40,.1),0 0 0 1px rgba(0,0,0,.04)}
+.tile .sil{aspect-ratio:9/16;background:#E3E5E8;overflow:hidden}
+video{display:block;width:100%;height:100%;object-fit:cover;background:#E3E5E8}
+.tile .ft{display:flex;align-items:center;gap:12px;padding:14px 18px 16px;font-size:22px;font-weight:700;letter-spacing:-.02em}
+.bd{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 8px;border-radius:999px;background:var(--red);color:#fff;font-size:14px;font-weight:700;letter-spacing:0}
+
+.cnt{display:flex;align-items:baseline;gap:12px;margin:18px 0 6px;flex-wrap:wrap}
+.num{font-size:64px;font-weight:700;letter-spacing:-.04em;line-height:1}.num em{margin-left:2px}
+.lbx{font-size:17px;color:var(--mut);font-weight:500;line-height:1.3}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.cd{margin:0;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 28px rgba(28,32,40,.09),0 0 0 1px rgba(0,0,0,.04)}
+.cd .sil{position:relative;aspect-ratio:9/16;background:#E3E5E8;overflow:hidden}
+.cd.wide{grid-column:1/-1}.cd.wide .sil{aspect-ratio:16/10}
+
+.cd.solo{grid-column:1/-1;justify-self:center;width:calc(50% - 6px)}
+
+.cd.tv{padding:6px 6px 0;border-radius:14px}.cd.tv .sil{border-radius:9px}.cd.tv figcaption{gap:7px;padding:9px 4px 11px;font-size:min(13px,3.33vw);font-weight:700;letter-spacing:-.015em}.cd.tv figcaption i{width:10px;height:3.5px;margin-top:6px;border-radius:2px}
+.cd figcaption{display:flex;align-items:flex-start;gap:8px;padding:11px 12px 13px;font-size:14px;font-weight:600;line-height:1.25;letter-spacing:-.01em}
+.cd figcaption i{flex:none;width:8px;height:2.5px;margin-top:8px;background:var(--red);border-radius:2px}
+.fan .fp{position:absolute;left:8px;right:8px;bottom:8px;display:flex;align-items:center;gap:7px;height:34px;padding:0 12px 0 8px;border-radius:999px;background:rgba(255,255,255,.92);font-size:14px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.16);white-space:nowrap}
+.fan .fp svg{width:20px;height:20px;flex:none}
+.fans .cd{background:none;box-shadow:none;border-radius:20px}.fans .sil{border-radius:20px}
+
+.panel{margin-top:22px;background:#fff;border-radius:24px;padding:16px 14px 18px;box-shadow:0 14px 40px rgba(28,32,40,.1),0 0 0 1px rgba(0,0,0,.04);position:relative}
+.calh{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mo{font-size:24px;font-weight:700;letter-spacing:-.03em}.mo small{font-size:16px;color:var(--mut);font-weight:500}
+.pub{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--mut)}
+.pub .pb{width:24px;height:24px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center}.pub .pb svg{width:14px;height:14px}
+.pub b{color:var(--ink)}.pub i{font-style:normal;color:var(--mut);font-weight:500}
+.bar{height:6px;border-radius:3px;background:#E2E4E8;margin:12px 0 14px;overflow:hidden}.bar b{display:block;height:100%;width:100%;background:var(--red);border-radius:3px}
+.wds{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:6px;text-align:center;font-size:13px;font-weight:600;color:var(--mut)}
+.cells{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cell{position:relative;aspect-ratio:3/4;border-radius:9px;overflow:hidden;background:#F1F2F4}
+.cell img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cell b{position:absolute;left:0;top:0;right:0;padding:3px 0 10px;text-align:center;font-size:13px;font-weight:700;color:#fff;background:linear-gradient(to bottom,rgba(0,0,0,.55),transparent);z-index:1}
+.cell.out b,.cell.none b{color:#B5B9C0;background:none;font-weight:500}
+.cell .ck{position:absolute;right:3px;bottom:3px;width:17px;height:17px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;z-index:1}.cell .ck svg{width:11px;height:11px}
+.chart{display:block;width:100%;height:auto;margin-top:34px}
+.endL{position:absolute;right:16px;top:14px;font-size:22px;font-weight:700;letter-spacing:-.03em;color:var(--red)}
+.axl{display:flex;justify-content:space-between;padding:6px 2px 0;font-size:13px;font-weight:500;color:var(--mut)}
+.stt{display:grid;grid-template-columns:1fr;gap:10px;margin-top:14px}
+.stt>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px;background:#fff;border-radius:20px;padding:14px 18px;box-shadow:0 10px 28px rgba(28,32,40,.07),0 0 0 1px rgba(0,0,0,.04)}
+.stt .l{font-size:13px;color:var(--mut);font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.stt .v{font-size:40px;font-weight:700;letter-spacing:-.035em;line-height:1.1;white-space:nowrap}.stt .v.r{color:var(--red)}
+.as{color:var(--red);font-weight:700;margin-left:1px}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:14px;background:#fff;border-radius:24px;padding:12px;box-shadow:0 10px 28px rgba(28,32,40,.07),0 0 0 1px rgba(0,0,0,.04)}
+.top .sil{flex:none;width:38%;aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:#E3E5E8}
+.top .p{font-size:22px;font-weight:700;letter-spacing:-.03em}.top .t{margin-top:6px;font-size:17px;color:var(--mut);font-weight:500;line-height:1.3}
+.fn{margin:14px 2px 0;font-size:13px;line-height:1.45;color:var(--mut);font-weight:500}
+
+.nc{background:#fff;border-radius:24px;padding:22px 20px 20px;margin-bottom:12px;box-shadow:0 14px 40px rgba(28,32,40,.1),0 0 0 1px rgba(0,0,0,.04)}
+.nc .big{font-size:min(22vw,92px);font-weight:700;letter-spacing:-.045em;line-height:1.05}.nc .big .acc svg{height:14px;bottom:-4px}
+.nc .lb{margin-top:14px;font-size:18px;line-height:1.3;font-weight:500;color:var(--ink);letter-spacing:-.01em}
+.nc .fn{margin:10px 0 0}
+
+.drs{background:#fff;color:var(--ink);padding:40px var(--gx) 36px}
+.stg{text-align:center}
+.st{margin-bottom:30px}
+.st .big{font-size:min(24vw,104px);font-weight:700;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums;color:var(--ink)}
+.st .lb{margin:22px auto 0;max-width:330px;font-size:19px;line-height:1.3;font-weight:500;color:#4A4D52;letter-spacing:-.01em}
+.kl .w{font-size:min(17vw,76px);font-weight:700;letter-spacing:-.045em;line-height:1.08;padding-bottom:.1em}
+.tsub{margin:14px 0 0;font-size:19px;color:#4A4D52;font-weight:500;letter-spacing:-.01em}
+.dots{display:none}
+.drs details.src{margin:8px 0 0}.drs details.src summary{color:var(--mut)}.drs details.src summary:after{border-color:var(--mut)}.drs .fn{color:var(--mut)}.drs .fn+.fn{margin-top:8px}
+.scnj .drs{padding:0 var(--gx) 36px}
+.scnj .scn{position:relative;margin:0 calc(-1*var(--gx))}
+.scnj .stg{position:-webkit-sticky;position:sticky;top:var(--hh);height:calc(100vh - var(--hh));height:calc(100svh - var(--hh));overflow:hidden}
+.scnj .nl{position:absolute;left:var(--gx);right:var(--gx);top:46%;transform:translateY(-50%)}
+.scnj .sts{position:relative;height:var(--sth,240px)}
+.scnj .st{position:absolute;left:0;right:0;top:0;margin:0;opacity:0}
+.scnj .dots{display:block;position:relative;width:52px;height:8px;margin:26px auto 0}
+.scnj .dots i,.scnj .dots b{position:absolute;top:0;height:8px;border-radius:4px;background:#D5D7DB;opacity:0}
+.scnj .dots i{width:8px}.scnj .dots i:nth-child(1){left:0}.scnj .dots i:nth-child(2){left:22px}.scnj .dots i:nth-child(3){left:44px}
+.scnj .dots b{background:var(--red);left:-6px;width:20px}
+.scnj .kl .w,.scnj .tsub{position:absolute;left:0;right:0;top:50%;margin:0;opacity:0}
+.lgo{margin-top:44px}.drs .wm{color:var(--ink)}.drs .ls{color:var(--mut)}
+.scnj .lgo{position:absolute;left:0;right:0;top:50%;margin:0;opacity:0;pointer-events:none}.scnj .lgo.on{pointer-events:auto}
+.scnj .drs .ul{-webkit-clip-path:inset(0 100% 0 0);clip-path:inset(0 100% 0 0)}
+
+.wm{font-family:Rubik,Onest,sans-serif;font-size:min(14vw,64px);font-weight:400;letter-spacing:-.03em;line-height:1;color:var(--ink)}.wm b{color:var(--red);font-weight:700}
+.ls{margin-top:14px;font-size:14px;font-weight:600;letter-spacing:.3em;color:var(--mut)}
+.askB{margin-top:28px;display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 28px;border:0;border-radius:999px;background:var(--red);color:#fff;font:600 17px Onest,-apple-system,Arial,sans-serif;cursor:pointer;white-space:nowrap;box-shadow:0 1px 2px rgba(20,20,20,.12)}
+.askB svg{width:18px;height:18px}
+
+#ftr{margin-top:0;border-radius:0;box-shadow:none}
+
+#ftr .fi{grid-template-columns:1fr 1fr;gap:32px 20px;padding:44px var(--gx) 32px}#ftr .fb,#ftr #contacts{grid-column:1/-1}
+#ftr .fl{display:grid;grid-template-columns:1fr 1fr;gap:0 20px;padding:20px var(--gx) 26px}#ftr .fl a{padding:9px 0}#ftr .fl span{grid-column:1/-1;margin:0 0 6px}
+#ftr .soc a{width:44px;height:44px}
+#ftr .fc a{padding:3px 0}
+#ftr h4{font-size:13px}
+#ftr .fcta svg{width:16px;height:16px;flex:none}
+.top details.src{flex:0 0 100%;margin:2px 4px 2px}
+
+#ftr .fcta{margin:6px 0 0;width:max-content;margin-left:0;height:44px;padding:0 22px;gap:10px;font-size:15px}#ftr .fcta i{display:inline}
+.more{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:54px;margin-top:14px;border:0;border-radius:999px;background:var(--red);color:#fff;font:600 17px Onest,-apple-system,Arial,sans-serif;cursor:pointer}
+.more svg{width:18px;height:18px}.more[hidden]{display:none}
+details.src{margin-top:12px}details.src summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--mut);padding:6px 0;list-style:none;display:inline-flex;align-items:center;gap:6px}
+details.src summary::-webkit-details-marker{display:none}details.src summary:after{content:'';width:7px;height:7px;border:solid var(--mut);border-width:0 2px 2px 0;transform:rotate(45deg);margin:-3px 0 0 4px;transition:none}
+details.src[open] summary:after{transform:rotate(-135deg);margin-top:3px}
+details.src .fn{margin-top:4px}
+
+h2.ml{line-height:1.3}
+@keyframes ulr{from{-webkit-clip-path:inset(0 100% 0 0);clip-path:inset(0 100% 0 0)}to{-webkit-clip-path:inset(0 0 0 0);clip-path:inset(0 0 0 0)}}
+.ulj h1 .ul,.ulj h2 .ul{-webkit-clip-path:inset(0 100% 0 0);clip-path:inset(0 100% 0 0)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style></head>
+<body>
+<header id="hdr">
+ <a class="lg" href="#top"  aria-label="mAInmodeL — в начало">m<b>AI</b>nmodeL</a>
+ <nav><a href="#v2"  data-t="Товарные">Товарные</a><a href="#v1"  data-t="Экспертные">Экспертные</a><a href="#v3"  data-t="Для SaaS">Для SaaS</a></nav>
+ <button class="mn" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mnu"><i></i><i></i><i></i></button><a class="cta" href="#" data-ask><span>Связаться<i>&nbsp;с&nbsp;нами</i></span><svg viewBox="0 0 16 16"><path d="M3 8h9.5M8.5 4l4 4-4 4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</header>
+<nav id="mnu" hidden aria-label="Разделы"><a href="#v2"  data-t="Товарные">Товарные</a><a href="#v1"  data-t="Экспертные">Экспертные</a><a href="#v3"  data-t="Для SaaS">Для SaaS</a></nav>
+<main class="col">
+<div id="top"></div>
+<section class="hero">
+ <h1><span>Мы <em>делаем видео</em></span><span>для соцсетей</span><span>вашего бизнеса</span></h1>
+ <div class="ph"><div class="phS"><video class="" src="media/phone-reel.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video><div class="tb"><i>Подписки</i>Для вас</div><div class="isl"></div>
+  <div class="who"><div class="u"><span class="av">m</span>@mainmodel<span class="fl">Подписаться</span></div><div class="c">видео под ключ</div></div></div></div>
+</section>
+
+<section class="sec" id="tri">
+ <h2>Три формата видео <em>под ключ</em></h2>
+ <div class="tiles">
+  <a class="tile" href="#v1"><div class="sil"><video class="" src="media/tile-ekspert.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><div class="ft"><span class="bd">01</span><span>Экспертные</span></div></a>
+  <a class="tile" href="#v2"><div class="sil"><video class="" src="media/tile-tovar.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><div class="ft"><span class="bd">02</span><span>Товарные</span></div></a>
+  <a class="tile" href="#v3"><div class="sil"><video class="" src="media/tile-saas.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><div class="ft"><span class="bd">03</span><span>SaaS-продукты</span></div></a>
+ </div>
+</section>
+
+<section class="sec" id="v1">
+ <div class="tg"><span class="bd">01</span><span class="tx"><span class="ey">Вид №1</span><span class="mn">Экспертные</span></span></div>
+ <h2>Экспертные видео про <em>ваш бизнес</em></h2>
+ <div class="cnt"><div class="num">10<em>+</em></div><div class="lbx">ниш с экспертными роликами</div></div>
+ <div class="grid"><figure class="cd "><div class="sil"><video class="" src="../site-main/media/r00b.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/r00b.jpg"></video></div><figcaption><i></i><span>Ремонт квартир</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="../site-main/media/r01.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/r01.jpg"></video></div><figcaption><i></i><span>Юридические услуги</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="../site-main/media/r11.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/r11.jpg"></video></div><figcaption><i></i><span>Автоподбор</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="../site-main/media/r03.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/r03.jpg"></video></div><figcaption><i></i><span>Агентство недвижимости</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="../site-main/media/r04.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/r04.jpg"></video></div><figcaption><i></i><span>Стоматология</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="../site-main/media/r05.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/r05.jpg"></video></div><figcaption><i></i><span>Автосалон</span></figcaption></figure><figure hidden class="cd "><div class="sil"><video class="" data-src="../site-main/media/r06.mp4" muted loop playsinline autoplay preload="none" disablepictureinpicture data-poster="../site-main/media/poster/r06.jpg"></video></div><figcaption><i></i><span>Умный дом</span></figcaption></figure><figure hidden class="cd "><div class="sil"><video class="" data-src="../site-main/media/r07.mp4" muted loop playsinline autoplay preload="none" disablepictureinpicture data-poster="../site-main/media/poster/r07.jpg"></video></div><figcaption><i></i><span>Семейный юрист</span></figcaption></figure><figure hidden class="cd "><div class="sil"><video class="" data-src="../site-main/media/r08b.mp4" muted loop playsinline autoplay preload="none" disablepictureinpicture data-poster="../site-main/media/poster/r08b.jpg"></video></div><figcaption><i></i><span>Ландшафтный дизайн</span></figcaption></figure><figure hidden class="cd "><div class="sil"><video class="" data-src="../site-main/media/r10e.mp4" muted loop playsinline autoplay preload="none" disablepictureinpicture data-poster="../site-main/media/poster/r10e.jpg"></video></div><figcaption><i></i><span>Автодетейлинг</span></figcaption></figure></div><button class="more" type="button" data-more>Ещё 4<svg viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</section>
+
+<section class="sec" id="v2">
+ <div class="tg"><span class="bd">02</span><span class="tx"><span class="ey">Вид №2</span><span class="mn">Товарные</span></span></div>
+ <h2 class="ml">Показываем <em>ваш товар</em> так, что <em>хочется купить</em></h2>
+ <div class="grid"><figure class="cd tv"><div class="sil"><video class="" src="../site-main/media/kuh5.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><figcaption><i></i><span>Кухни</span></figcaption></figure><figure class="cd tv"><div class="sil"><video class="" src="../site-main/media/z10.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><figcaption><i></i><span>Мягкая мебель</span></figcaption></figure><figure class="cd tv"><div class="sil"><video class="" src="../site-main/media/r09b.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><figcaption><i></i><span>Новостройки</span></figcaption></figure><figure class="cd tv"><div class="sil"><video class="" src="media/ring5m.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><figcaption><i></i><span>Ювелирные изделия</span></figcaption></figure><figure class="cd tv"><div class="sil"><video class="" src="../site-main/media/z11.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><figcaption><i></i><span>Садовая мебель</span></figcaption></figure><figure class="cd tv"><div class="sil"><video class="" src="../site-main/media/z16.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><figcaption><i></i><span>Детские товары</span></figcaption></figure></div>
+</section>
+
+<section class="sec" id="v3">
+ <div class="tg"><span class="bd">03</span><span class="tx"><span class="ey">Вид №3</span><span class="mn">SaaS-продукты</span></span></div>
+ <h2 class="ml">Показываем, <em>как работает ваш сервис</em></h2>
+ <div class="grid"><figure class="cd "><div class="sil"><video class="" src="../site-main/media/x00.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/x00.jpg"></video></div><figcaption><i></i><span>AI‑ассистенты и автоматизация</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="../site-main/media/u07.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/u07.jpg"></video></div><figcaption><i></i><span>CRM и продажи</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="../site-main/media/u02.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/u02.jpg"></video></div><figcaption><i></i><span>Управление проектами</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="../site-main/media/x01.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/x01.jpg"></video></div><figcaption><i></i><span>FinTech и учет</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="../site-main/media/u04.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture poster="../site-main/media/poster/u04.jpg"></video></div><figcaption><i></i><span>E‑commerce и No‑code</span></figcaption></figure><figure class="cd "><div class="sil"><video class="" src="media/u05r.mp4" muted loop playsinline autoplay preload="metadata" disablepictureinpicture></video></div><figcaption><i></i><span>Отраслевые решения (Vertical)</span></figcaption></figure></div>
+</section>
+
+
+
+
+
+<section class="drs" id="nums">
+ <div class="scn"><div class="stg">
+  <div class="nl">
+   <div class="sts">
+    <div class="st"><div class="big"><span class="acc nb"><span class="cn">×3,7</span><span class="ul"></span></span></div><div class="lb">охват клипа против поста с картинкой<span class="as">*</span></div></div>
+    <div class="st"><div class="big"><span class="acc nb">+233%<span class="ul"></span></span></div><div class="lb">заявок на тот же бюджет с вертикальными роликами<span class="as">**</span></div></div>
+    <div class="st"><div class="big"><span class="acc nb">83%<span class="ul"></span></span></div><div class="lb">бизнесов получили рост продаж от видео<span class="as">***</span></div></div>
+   </div>
+   <div class="dots"><i></i><i></i><i></i><b></b></div>
+  </div>
+  <div class="kl">
+   <div class="w">сценарии</div><div class="w">ролики</div><div class="w"><span class="acc kw"><em>клиенты</em><span class="ul"></span></span></div>
+   <p class="tsub">пока вы занимаетесь бизнесом</p>
+  </div>
+  
+  <div class="lgo">
+   <div class="wm">m<b>AI</b>nmodeL</div>
+   <div class="ls">AI-FIRST AGENCY</div>
+   <button class="askB" type="button" data-ask>Задайте нам вопрос<svg viewBox="0 0 16 16"><path d="M3 8h9.5M8.5 4l4 4-4 4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
+ </div></div>
+ <details class="src"><summary>Источники</summary><p class="fn n">* LiveDune: 7 тыс. охвата у поста с клипом против 1,9 тыс. у поста с картинкой — 42 млн постов ВКонтакте за 2024 год, 2025, livedune.com</p><p class="fn n">** Кейс VK Рекламы: лид-формы в VK Клипах (UFC GYM) — в 3,3 раза больше заявок на тот же бюджет, чем в остальных размещениях (+233%), 03.2023–03.2024, ads.vk.ru</p><p class="fn n">*** Wyzowl, Video Marketing Statistics 2026: 83% маркетологов отмечают, что видео напрямую увеличило продажи, wyzowl.com</p></details>
+</section>
+
+
+<footer id="ftr">
+ <div class="fi">
+  <div class="fb"><a class="lg" href="#top" >m<b>AI</b>nmodeL</a>
+   <p>AI-First Agency</p>
+   <div class="soc"><a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#27A7E7"/><path d="M5.3 11.8l11.4-4.4c.6-.2 1 .1.9.9l-1.9 9c-.1.6-.5.8-1.1.5l-2.9-2.1-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.3-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.1-.9z" fill="#fff"/></svg></a><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="1" y="4.5" width="22" height="15" rx="4.6" fill="#FF0000"/><path d="M10 8.6v6.8l5.9-3.4z" fill="#fff"/></svg></a><a href="#" aria-label="VK"><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="7" fill="#0077FF"/><path d="M12.8 16.9C7.9 16.9 5.1 13.6 5 8h2.5c.1 4.1 1.9 5.8 3.3 6.2V8h2.3v3.5c1.4-.2 2.9-1.8 3.4-3.5h2.3c-.4 2.2-2 3.8-3.1 4.4 1.1.5 2.9 1.9 3.6 4.5h-2.5c-.5-1.7-1.9-3-3.7-3.2v3.2z" fill="#fff"/></svg></a><a href="#" aria-label="Дзен"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M12 3.6c.2 4.6 3.8 8.2 8.4 8.4-4.6.2-8.2 3.8-8.4 8.4-.2-4.6-3.8-8.2-8.4-8.4 4.6-.2 8.2-3.8 8.4-8.4z" fill="#000"/></svg></a></div></div>
+  <div class="fc"><h4>Компания</h4><a href="#top" >Главная</a><a href="#">Блог</a></div>
+  <div class="fc"><h4>Форматы</h4><a href="#v2" >Товарные ролики</a><a href="#v1" >Экспертные ролики</a><a href="#v3" >Ролики для SaaS</a></div>
+  <div class="fc" id="contacts"><h4>Контакты</h4><div class="soc msg"><a href="https://wa.me/84397459043" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#25D366"/><path d="M8.1 16.9 6 18l.7-2.4A6.4 6.4 0 1 1 8.1 16.9z" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="M9.6 9.1c.2-.4.5-.5.8-.5h.3c.1 0 .3.1.4.3l.5 1.2c.1.2 0 .4-.1.5l-.4.4c.3.7 1 1.4 1.7 1.7l.4-.4c.1-.1.3-.2.5-.1l1.2.5c.2.1.3.2.3.4v.3c0 .3-.1.6-.5.8-.6.3-1.6.2-2.8-.6-.8-.5-1.6-1.3-2.1-2.1-.8-1.2-.9-2.2-.6-2.8z" fill="#fff"/></svg></a><a href="https://t.me/mainmodel_ai" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#27A7E7"/><path d="M5.3 11.8l11.4-4.4c.6-.2 1 .1.9.9l-1.9 9c-.1.6-.5.8-1.1.5l-2.9-2.1-1.4 1.4c-.2.2-.3.3-.6.3l.2-3 5.4-4.9c.2-.2 0-.3-.3-.1l-6.7 4.2-2.9-.9c-.6-.2-.6-.6.1-.9z" fill="#fff"/></svg></a></div>
+   <a class="cta2" href="#" data-ask>Обсудить проект<svg viewBox="0 0 16 16" width="15" height="15"><path d="M3 8h9.5M8.5 4l4 4-4 4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+ </div>
+ <div class="fl"><span>© 2026 mAInmodeL. Все права защищены.</span><a href="#" data-pp>Политика конфиденциальности</a><a href="#" data-pp="ua">Пользовательское соглашение</a><a href="#" data-ckset>Настройки cookie</a></div>
+</footer>
+</main>
+<div id="ask" hidden role="dialog" aria-modal="true" aria-labelledby="askH">
+ <div class="bd" data-x></div>
+ <div class="box">
+  <button type="button" class="x" data-x aria-label="Закрыть">×</button>
+  <form id="askF" novalidate>
+   <h3 id="askH">Задайте нам вопрос</h3>
+   <p>Оставьте телефон — перезвоним в рабочее время и ответим на всё, что касается роликов для вашего бизнеса.</p>
+   <label>Имя<input name="name" autocomplete="name" placeholder="Как к вам обращаться"></label>
+   
+   <label>Телефон<span class="rq" aria-hidden="true">*</span><span class="pw"><input name="phone" type="tel" required aria-required="true" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__"><span class="gh" aria-hidden="true"><i></i><b></b></span></span><span class="er">Проверьте номер: похоже, не хватает цифр</span></label>
+   <label>Комментарий<textarea name="msg" rows="3" placeholder="Что хотите обсудить? Ниша, задача, сроки"></textarea></label>
+   <input class="hp" name="site" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="sb" type="submit">Отправить</button>
+   <p class="sf" hidden role="alert">Не получилось отправить. Напишите нам в <a href="https://wa.me/84397459043" target="_blank" rel="noopener">WhatsApp</a>, <a href="https://t.me/mainmodel_ai" target="_blank" rel="noopener">Telegram</a> или на <a href="mailto:agency@mainmodel.ai">agency@mainmodel.ai</a>.</p>
+   <small>Нажимая «Отправить», вы соглашаетесь с <a href="#" data-pp>политикой конфиденциальности</a></small>
+  </form>
+  <div class="ok" hidden><i><svg viewBox="0 0 24 24" width="30" height="30"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#C8102E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></i>
+   <h3>Спасибо, заявка у нас</h3><p>Ваша заявка принята. Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время.</p><button type="button" class="sb" data-x>Хорошо</button></div>
+ </div>
+</div>
+
+
+<div id="pp" hidden role="dialog" aria-modal="true" aria-labelledby="ppH">
+ <div class="bd" data-px></div>
+ <div class="box" tabindex="-1">
+  <button type="button" class="x" data-px aria-label="Закрыть">×</button>
+  <h3 id="ppH" data-doc="pp">Политика конфиденциальности</h3>
+  <div class="pt" data-doc="pp">
+   <p class="ed">Редакция от 22 ноября 2026 г.</p>
+   <h4>1. Общие положения</h4>
+   <p>1.1. Настоящая Политика в отношении обработки персональных данных (далее — Политика) составлена в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению их безопасности, принимаемые mAInmodeL (далее — Оператор).</p>
+   <p>1.2. Сведения об Операторе: [наименование / ФИО индивидуального предпринимателя, ИНН, ОГРН(ИП), адрес]. Связаться с Оператором по вопросам обработки персональных данных можно по адресу электронной почты <a href="mailto:agency@mainmodel.ai">agency@mainmodel.ai</a>.</p>
+   <p>1.3. Политика применяется ко всей информации, которую Оператор может получить о посетителях сайта (далее — Пользователи), в том числе через формы обратной связи.</p>
+   <p>1.4. Отправляя форму на сайте, Пользователь подтверждает, что ознакомился с Политикой и даёт согласие на обработку своих персональных данных на изложенных в ней условиях.</p>
+   <h4>2. Основные понятия</h4>
+   <p>2.1. Персональные данные — любая информация, относящаяся прямо или косвенно к определённому или определяемому физическому лицу (субъекту персональных данных).</p>
+   <p>2.2. Обработка персональных данных — любое действие или совокупность действий с персональными данными, совершаемых с использованием средств автоматизации или без них: сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передача (предоставление, доступ), обезличивание, блокирование, удаление, уничтожение.</p>
+   <p>2.3. Иные термины используются в значениях, установленных Федеральным законом № 152-ФЗ.</p>
+   <h4>3. Какие данные мы обрабатываем</h4>
+   <p>3.1. Данные, которые Пользователь сообщает сам через форму на сайте: имя, номер телефона, текст комментария.</p>
+   <p>3.2. Технические данные, которые передаются автоматически при посещении сайта: IP-адрес, сведения о браузере и устройстве, файлы cookie, дата и время доступа.</p>
+   <p>3.3. Оператор не обрабатывает специальные категории персональных данных (о расовой и национальной принадлежности, политических взглядах, религиозных убеждениях, состоянии здоровья, интимной жизни) и биометрические персональные данные.</p>
+   <h4>4. Цели обработки</h4>
+   <p>4.1. Связаться с Пользователем по его заявке, ответить на вопросы и проконсультировать по услугам Оператора.</p>
+   <p>4.2. Подготовить коммерческое предложение, заключить и исполнить договор с Пользователем.</p>
+   <p>4.3. Обеспечить работу сайта и улучшить его удобство.</p>
+   <h4>5. Правовые основания обработки</h4>
+   <p>5.1. Согласие Пользователя на обработку персональных данных, которое он даёт, отправляя форму на сайте.</p>
+   <p>5.2. Заключение и исполнение договора, стороной которого является Пользователь, а также действия по его запросу до заключения договора.</p>
+   <h4>6. Порядок и условия обработки</h4>
+   <p>6.1. Оператор обрабатывает персональные данные законно и справедливо, только в объёме, необходимом для целей из раздела 4.</p>
+   <p>6.2. Оператор не передаёт персональные данные третьим лицам, за исключением случаев, когда это необходимо для исполнения заявки Пользователя или договора с ним (в объёме, необходимом для этого), либо когда передача предусмотрена законодательством Российской Федерации.</p>
+   <p>6.3. При сборе персональных данных граждан Российской Федерации запись, систематизация, накопление, хранение, уточнение и извлечение этих данных осуществляются с использованием баз данных, находящихся на территории Российской Федерации.</p>
+   <p>6.4. Персональные данные хранятся не дольше, чем этого требуют цели обработки, если иной срок не установлен законом или договором. По достижении целей или при отзыве согласия данные уничтожаются в течение 30 дней.</p>
+   <h4>7. Права Пользователя</h4>
+   <p>7.1. Пользователь вправе:</p>
+   <ul>
+    <li>получить сведения об обработке своих персональных данных;</li>
+    <li>потребовать уточнения, блокирования или уничтожения данных, если они неполные, устаревшие, неточные, получены незаконно или не нужны для заявленной цели;</li>
+    <li>отозвать согласие на обработку персональных данных;</li>
+    <li>обжаловать действия или бездействие Оператора в уполномоченном органе по защите прав субъектов персональных данных (Роскомнадзор) или в суде.</li>
+   </ul>
+   <p>7.2. Чтобы воспользоваться этими правами или отозвать согласие, достаточно написать на <a href="mailto:agency@mainmodel.ai">agency@mainmodel.ai</a>. Оператор ответит в сроки, установленные Федеральным законом № 152-ФЗ.</p>
+   <h4>8. Защита персональных данных</h4>
+   <p>8.1. Оператор принимает правовые, организационные и технические меры, чтобы защитить персональные данные от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения и иных неправомерных действий.</p>
+   <p>8.2. Доступ к персональным данным есть только у лиц, которым он нужен для выполнения их обязанностей.</p>
+   <h4>9. Файлы cookie</h4>
+   <p>9.1. Cookie — небольшие файлы, которые сайт сохраняет в браузере Пользователя. Сайт использует:</p>
+   <ul><li>необходимые — запоминают выбор Пользователя в плашке о cookie и обеспечивают работу сайта и формы обратной связи; используются без отдельного согласия;</li><li>аналитические (например, Яндекс Метрика или Google Analytics, если они подключены) — помогают считать посещения и улучшать сайт; включаются только после нажатия «Принять все».</li></ul>
+   <p>9.2. При первом посещении сайта Пользователь выбирает «Принять все» или «Только необходимые». Выбор хранится в браузере 12 месяцев.</p>
+   <p>9.3. Изменить решение или отозвать согласие можно в любой момент по ссылке «Настройки cookie» в подвале сайта, а также удалив cookie в настройках браузера; часть функций сайта при этом может работать некорректно.</p>
+   <h4>10. Заключительные положения</h4>
+   <p>10.1. Оператор вправе вносить изменения в Политику. Новая редакция вступает в силу с момента её размещения на сайте.</p>
+   <p>10.2. Действующая редакция Политики постоянно доступна на сайте.</p>
+  </div>
+  <h3 id="uaH" data-doc="ua" hidden>Пользовательское соглашение</h3>
+  <div class="pt" data-doc="ua" hidden>
+   <p class="ed">Редакция от 22 ноября 2026 г.</p>
+   <h4>1. Общие положения</h4>
+   <p>1.1. Настоящее Пользовательское соглашение (далее — Соглашение) регулирует отношения между mAInmodeL (далее — Администрация) и любым лицом, использующим сайт mAInmodeL (далее — Пользователь).</p>
+   <p>1.2. Соглашение является публичной офертой в соответствии со статьёй 437 Гражданского кодекса РФ. Начиная пользоваться сайтом, Пользователь подтверждает, что ознакомился с Соглашением и принимает его условия полностью и без оговорок (статья 438 ГК РФ). Если Пользователь не согласен с условиями, он должен прекратить использование сайта.</p>
+   <p>1.3. Соглашение действует бессрочно и не требует подписания в письменной форме.</p>
+   <h4>2. Основные понятия</h4>
+   <p>2.1. Сайт — совокупность страниц, текстов, изображений, видео и программного кода, доступных в сети Интернет под доменом mAInmodeL.</p>
+   <p>2.2. Пользователь — любое лицо, посетившее Сайт.</p>
+   <p>2.3. Контент — все материалы Сайта: тексты, видеоролики, изображения, графика, дизайн, логотипы, товарные знаки и программный код.</p>
+   <p>2.4. Заявка — сведения, которые Пользователь направляет через форму на Сайте или через указанные на нём мессенджеры и электронную почту.</p>
+   <h4>3. Предмет Соглашения</h4>
+   <p>3.1. Администрация предоставляет Пользователю доступ к Сайту и размещённой на нём информации об услугах mAInmodeL: производство контента для социальных сетей и внедрение искусственного интеллекта в бизнес.</p>
+   <p>3.2. Информация на Сайте, в том числе описания услуг, примеры работ и цены, носит справочный характер и не является публичной офертой на оказание услуг. Условия, сроки и стоимость услуг определяются отдельным договором между Администрацией и клиентом.</p>
+   <p>3.3. Доступ к Сайту предоставляется бесплатно.</p>
+   <h4>4. Права и обязанности Пользователя</h4>
+   <p>4.1. Пользователь вправе знакомиться с Контентом, оставлять Заявки и связываться с Администрацией по указанным на Сайте контактам.</p>
+   <p>4.2. Пользователь обязуется:</p>
+   <ul><li>указывать в Заявке достоверные сведения и только свои контактные данные или данные лиц, давших на это согласие;</li><li>не нарушать работу Сайта, не пытаться получить доступ к его программной части и не использовать автоматические средства для массовой отправки Заявок или сбора информации;</li><li>не размещать и не передавать через Сайт сведения, нарушающие законодательство РФ или права третьих лиц, а также рекламу и спам;</li><li>не копировать, не распространять и не использовать Контент иначе, чем разрешено разделом 6 Соглашения.</li></ul>
+   <h4>5. Права Администрации</h4>
+   <p>5.1. Администрация вправе в любое время без предварительного уведомления изменять содержание и дизайн Сайта, приостанавливать или прекращать его работу, в том числе для технического обслуживания.</p>
+   <p>5.2. Администрация вправе не отвечать на Заявки, содержащие недостоверные сведения, оскорбления, рекламу или спам, и ограничить приём Заявок с адресов, с которых нарушается Соглашение.</p>
+   <h4>6. Интеллектуальная собственность</h4>
+   <p>6.1. Исключительные права на Контент принадлежат Администрации или используются ею на законном основании, в том числе с согласия клиентов, чьи проекты показаны в примерах работ. Контент охраняется законодательством РФ об интеллектуальной собственности (часть IV ГК РФ).</p>
+   <p>6.2. Пользователь может просматривать Контент для личного ознакомления. Копирование, переработка, распространение и иное использование Контента, в том числе в коммерческих целях, допускается только с письменного согласия Администрации.</p>
+   <p>6.3. Допускается цитирование текстов Сайта в информационных целях с указанием источника и активной ссылкой на Сайт.</p>
+   <h4>7. Персональные данные</h4>
+   <p>7.1. Персональные данные, которые Пользователь указывает в Заявке, обрабатываются в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и <a href="#" data-pp>Политикой конфиденциальности</a>.</p>
+   <p>7.2. Отправляя Заявку, Пользователь даёт согласие на обработку указанных в ней данных для ответа на обращение.</p>
+   <h4>8. Ответственность</h4>
+   <p>8.1. Сайт предоставляется «как есть». Администрация не гарантирует его бесперебойную работу и отсутствие ошибок и не отвечает за временную недоступность Сайта по техническим причинам.</p>
+   <p>8.2. Администрация не несёт ответственности за решения, принятые Пользователем на основании информации с Сайта, и за возможные убытки от использования или невозможности использования Сайта.</p>
+   <p>8.3. Сайт содержит ссылки на сторонние сервисы (WhatsApp, Telegram и другие). Администрация не отвечает за их работу и содержание; при переходе на них действуют правила этих сервисов.</p>
+   <p>8.4. Пользователь несёт ответственность за достоверность переданных сведений и за нарушение условий Соглашения в соответствии с законодательством РФ.</p>
+   <h4>9. Изменение Соглашения</h4>
+   <p>9.1. Администрация вправе изменять Соглашение в одностороннем порядке. Новая редакция вступает в силу с момента её размещения на Сайте. Продолжая пользоваться Сайтом после изменений, Пользователь принимает новую редакцию.</p>
+   <h4>10. Применимое право и споры</h4>
+   <p>10.1. К Соглашению применяется законодательство Российской Федерации.</p>
+   <p>10.2. Споры решаются путём переговоров. До обращения в суд Пользователь направляет Администрации письменную претензию на адрес <a href="mailto:agency@mainmodel.ai">agency@mainmodel.ai</a>; срок ответа — 30 дней со дня получения. Если спор не урегулирован, он рассматривается в суде по месту нахождения Администрации, если иное не установлено законом.</p>
+   <p>10.3. Если какое-либо положение Соглашения будет признано недействительным, это не влияет на действие остальных положений.</p>
+   <h4>11. Сведения об Администрации</h4>
+   <p>[наименование / ФИО индивидуального предпринимателя, ИНН, ОГРН(ИП), адрес]. Электронная почта для обращений: <a href="mailto:agency@mainmodel.ai">agency@mainmodel.ai</a>.</p>
+  </div>
+ </div>
+</div>
+
+<div id="ck" hidden role="region" aria-label="Согласие на использование cookie">
+ <b>Мы используем cookie</b>
+ <p>Они нужны, чтобы сайт работал. С&nbsp;вашего согласия&nbsp;— ещё и&nbsp;чтобы считать посещения и&nbsp;делать сайт удобнее. Подробнее&nbsp;— в&nbsp;<a href="#" data-pp>политике конфиденциальности</a>.</p>
+ <div class="cb"><button type="button" class="ya" data-cka="1">Принять все</button><button type="button" class="no" data-cka="0">Только необходимые</button></div>
+</div>
+<script>const $=id=>document.getElementById(id);(function(){const V=[...document.querySelectorAll("video")].filter(v=>v.src||v.getAttribute("src"));V.forEach(v=>{v.muted=true;v.setAttribute("muted","")});if(!("IntersectionObserver"in window)){V.forEach(v=>v.play&&v.play().catch(()=>{}));return}const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){const p=v.play();p&&p.catch&&p.catch(()=>{})}else v.pause()}),{rootMargin:"200px 0px"});V.forEach(v=>io.observe(v));window.__io=io})();document.querySelectorAll("[data-more]").forEach(b=>b.addEventListener("click",()=>{const g=b.previousElementSibling;g.querySelectorAll("figure[hidden]").forEach(f=>{f.hidden=false;const v=f.querySelector("video");if(v){if(v.dataset.poster)v.poster=v.dataset.poster;v.src=v.dataset.src;v.preload="metadata";v.muted=true;v.load();window.__io&&window.__io.observe(v)}});b.hidden=true}));(function(){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;const sec=$("nums");if(!sec)return;const D=document.documentElement;D.classList.add("scnj");const col=document.querySelector(".col");let clip=false;try{clip=CSS.supports("overflow","clip")}catch(e){}col.style.overflow=clip?"clip":"visible";const scn=sec.querySelector(".scn"),stg=sec.querySelector(".stg"),stsB=sec.querySelector(".sts"),sts=[...sec.querySelectorAll(".st")],uls=sts.map(e=>e.querySelector(".ul")),cn=sec.querySelector(".cn"),dots=[...sec.querySelectorAll(".dots i")],pill=sec.querySelector(".dots b"),ws=[...sec.querySelectorAll(".kl .w")],kul=ws[2].querySelector(".ul"),sub=sec.querySelector(".tsub"),lgo=sec.querySelector(".lgo");let LIFT=120;const cl=x=>x<0?0:x>1?1:x,P=(t,a,b)=>cl((t-a)/(b-a)),L=(a,b,x)=>a+(b-a)*x,eo3=x=>1-Math.pow(1-x,3),eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;const T_END=7.1,T_LOGO=6.15,T0=.5,TS=[.05,1.75,2.75],T_OUT=3.75,TK=[3.75,4.35,4.95],T_SUB=5.55;let u=1,hh=56;const CL=(el,f)=>{const v="inset(0 "+((1-f)*100).toFixed(1)+"% 0 0)";el.style.webkitClipPath=v;el.style.clipPath=v};function size(){const vh=innerHeight;hh=parseFloat(getComputedStyle(D).getPropertyValue("--hh"))||56;u=.45*vh;LIFT=Math.round(stg.offsetHeight*.16);sec.querySelector(".sts").style.setProperty("--sth",Math.ceil(Math.max(...sts.map(e=>e.offsetHeight)))+"px");scn.style.height=stg.offsetHeight+(T_END-T0)*u+"px";draw()}function S(el,tx,ty,op,bl){el.style.transform="translate3d("+tx.toFixed(1)+"px,"+ty.toFixed(1)+"px,0)";el.style.opacity=op.toFixed(3);el.style.filter=bl>.3?"blur("+bl.toFixed(1)+"px)":"none"}function draw(){const r=scn.getBoundingClientRect();if(r.bottom<-50||r.top>innerHeight+50)return;const t=(hh-r.top)/u+T0;const xr=stsB.getBoundingClientRect(),ent=cl((innerHeight*.95-(xr.top+xr.bottom)/2)/(innerHeight*.25));sts.forEach((el,k)=>{const a=TS[k],b=k<2?TS[k+1]:T_OUT,i=eo3(k?P(t,a,a+.34):Math.max(ent,P(t,a,a+.42))),o=eio(P(t,b-.2,b));S(el,(1-i)*30,-o*22,i*(1-o),(1-i)*12+o*14)});cn.textContent="×"+L(1,3.7,eio(P(t,.45,1.05))).toFixed(1).replace(".",",");[[.95,1.3],[2.05,2.4],[3.05,3.4]].forEach((w,k)=>CL(uls[k],eio(P(t,w[0],w[1]))));const dop=(eo3(Math.max(ent,P(t,.25,.55)))*(1-eio(P(t,T_OUT-.2,T_OUT)))).toFixed(3);dots.forEach(d=>d.style.opacity=dop);pill.style.opacity=dop;const a2=eio(P(t,TS[1]-.06,TS[1]+.2))+eio(P(t,TS[2]-.06,TS[2]+.2)),i0=Math.min(1,Math.floor(a2)),f=a2-i0,xa=i0*22,xb=(i0+1)*22;const l=L(xa,xb,eio(cl(f*1.6-.6))),rr=L(xa,xb,eio(cl(f*1.6)))+8;pill.style.left=l-6+"px";pill.style.width=rr-l+12+"px";const sh=eio(P(t,T_SUB-.02,T_SUB+.36)),nO=eio(P(t,T_LOGO-.04,T_LOGO+.22)),lf=0;ws.forEach((el,k)=>{const T=TK[k],a=eo3(P(t,T,T+.32)),n=k<2?eio(P(t,TK[k+1]-.04,TK[k+1]+.22)):nO;S(el,(1-a)*40,-el.offsetHeight/2-n*60-sh*34-lf,a*(1-n),(1-a)*12+n*14)});CL(kul,eio(P(t,TK[2]+.3,TK[2]+.75)));const sa=eo3(P(t,T_SUB+.06,T_SUB+.42));S(sub,(1-sa)*26,30-nO*60,sa*(1-nO),(1-sa)*10+nO*14);const la=eo3(P(t,T_LOGO,T_LOGO+.32));S(lgo,(1-la)*40,-lgo.offsetHeight/2,la,(1-la)*12);lgo.classList.toggle("on",la>.6)}let q=0;const req=()=>{if(!q){q=1;requestAnimationFrame(()=>{q=0;draw()})}};addEventListener("scroll",req,{passive:true});addEventListener("resize",size);document.fonts&&document.fonts.ready.then(size);size()})();(function(){const b=document.querySelector("#hdr .mn"),m=$("mnu");if(!b||!m)return;let tm=0;const isO=()=>b.getAttribute("aria-expanded")==="true";const set=o=>{b.setAttribute("aria-expanded",o?"true":"false");b.setAttribute("aria-label",o?"Закрыть меню":"Открыть меню");b.classList.toggle("x",o);clearTimeout(tm);if(o){m.hidden=false;requestAnimationFrame(()=>requestAnimationFrame(()=>m.classList.add("on")))}else{m.classList.remove("on");tm=setTimeout(()=>{m.hidden=true},250)}};b.addEventListener("click",e=>{e.stopPropagation();set(!isO())});m.querySelectorAll("a").forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));set(false);if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth",block:"start"})}}));document.addEventListener("click",e=>{if(isO()&&!m.contains(e.target)&&!b.contains(e.target))set(false)});addEventListener("keydown",e=>{if(e.key==="Escape"&&isO()){set(false);b.focus()}})})();(function ask(){const M=$("ask"),F=$("askF"),OK=M.querySelector(".ok"),I=F.elements;let back=null;const open=e=>{e&&e.preventDefault();back=document.activeElement;F.hidden=false;OK.hidden=true;F.reset();F.querySelector(".sf").hidden=true;F.querySelectorAll(".bad").forEach(x=>x.classList.remove("bad"));M.hidden=false;document.documentElement.style.overflow="hidden";setTimeout(()=>I.name.focus(),60)};const close=()=>{M.hidden=true;document.documentElement.style.overflow="";back&&back.focus&&back.focus()};document.querySelectorAll("[data-ask]").forEach(b=>b.addEventListener("click",open));M.querySelectorAll("[data-x]").forEach(b=>b.addEventListener("click",close));addEventListener("keydown",e=>{if(e.key==="Escape"&&!M.hidden)close()});const PH=I.phone,GH=PH.parentNode.querySelector(".gh"),TPL={"7":"+7 (XXX) XXX-XX-XX","1":"+1 (XXX) XXX-XXXX","84":"+84 XXX XXX XXX","86":"+86 XXX XXXX-XXXX","90":"+90 (XXX) XXX-XX-XX","66":"+66 XX XXX-XXXX","971":"+971 XX XXX-XXXX","972":"+972 XX XXX-XXXX","373":"+373 XX XXX-XXX","374":"+374 XX XXX-XXX","375":"+375 XX XXX-XX-XX","380":"+380 XX XXX-XX-XX","992":"+992 XX XXX-XXXX","993":"+993 XX XX-XX-XX","994":"+994 XX XXX-XX-XX","995":"+995 XXX XX-XX-XX","996":"+996 XXX XXX XXX","998":"+998 XX XXX-XX-XX"},dg=s=>s.replace(/\D/g,""),tp=d=>{for(const k in TPL)if(d.startsWith(k))return TPL[k].replace(/\d/g,"X");return null},nx=t=>t.split("X").length-1,cap=d=>{if(d.length===12&&d.startsWith("78"))d="7"+d.slice(2);const t=tp(d);return d.slice(0,t?nx(t):15)},okP=d=>{const t=tp(d);return t?d.length===nx(t):d.length>=8&&d.length<=15},norm=s=>{let d=dg(s);if(!/^\s*\+/.test(s)){if(d.length===11&&d[0]==="8")d="7"+d.slice(1);else if(d.length===10)d="7"+d}return d},put=(d,cd)=>{d=cap(d);const t=tp(d);let v="",g="";if(d&&t){let i=0,j=0;for(;j<t.length&&i<d.length;j++)v+=t[j]==="X"?d[i++]:t[j];g=t.slice(j).replace(/X/g,"_")}else if(d)v="+"+d;PH.value=v;GH.firstChild.textContent=v;GH.lastChild.textContent=g;if(document.activeElement===PH){let p=v.length;if(cd!=null&&cd<d.length){p=0;for(let n=0;p<v.length&&n<cd;p++)if(/\d/.test(v[p]))n++}PH.setSelectionRange(p,p)}};PH.addEventListener("focus",()=>{if(!PH.value)put("7");setTimeout(()=>{if(document.activeElement===PH&&PH.selectionStart===PH.selectionEnd)PH.setSelectionRange(PH.value.length,PH.value.length)},0)});PH.addEventListener("blur",()=>{const d=dg(PH.value);if(!d||d==="7")put("")});PH.addEventListener("beforeinput",e=>{if(e.inputType!=="deleteContentBackward")return;const v=PH.value,s=PH.selectionStart;if(s!==PH.selectionEnd||!s||/\d/.test(v[s-1]))return;e.preventDefault();let j=s-1;while(j>=0&&!/\d/.test(v[j]))j--;if(j<0)return;const d=dg(v),cd=dg(v.slice(0,j)).length;put(d.slice(0,cd)+d.slice(cd+1),cd)});PH.addEventListener("paste",e=>{const t=(e.clipboardData||window.clipboardData).getData("text");const d=dg(PH.value);if(!d||d==="7"||PH.selectionStart===0&&PH.selectionEnd===PH.value.length){e.preventDefault();put(norm(t))}});PH.addEventListener("input",e=>{const v=PH.value;if(!e.inputType||e.inputType==="insertReplacementText"){put(norm(v));return}put(dg(v),dg(v.slice(0,PH.selectionStart??v.length)).length)});F.addEventListener("reset",()=>setTimeout(()=>put(""),0));const chk=()=>{const p=okP(dg(PH.value));PH.closest("label").classList.toggle("bad",!p);return p};F.addEventListener("input",e=>{const l=e.target.closest("label");if(l&&l.classList.contains("bad"))chk()});F.addEventListener("submit",e=>{e.preventDefault();if(!chk()){(F.querySelector(".bad input")||I.phone).focus();return}const lead={name:I.name.value.trim(),phone:I.phone.value.trim(),msg:I.msg.value.trim(),site:I.site?I.site.value:"",page:location.pathname};window.__askLast=lead;const done=()=>{F.hidden=true;OK.hidden=false;OK.querySelector(".sb").focus()};if(location.protocol==="file:"){done();return}const B=F.querySelector(".sb"),T=B.textContent,ER=F.querySelector(".sf");B.disabled=true;B.textContent="Отправляем…";ER.hidden=true;fetch("/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(lead)}).then(r=>r.json().catch(()=>({})).then(j=>{if(!(r.ok&&j.ok))throw 0;done()})).catch(()=>{ER.hidden=false}).finally(()=>{B.disabled=false;B.textContent=T})});{const P=$("pp");if(P){let pb=null;const po=e=>{e&&e.preventDefault();const d=e&&e.currentTarget.dataset.pp||"pp";if(P.hidden)pb=document.activeElement;P.querySelectorAll("[data-doc]").forEach(x=>x.hidden=x.dataset.doc!==d);P.setAttribute("aria-labelledby",d+"H");P.hidden=false;P.querySelector('.pt[data-doc="'+d+'"]').scrollTop=0;document.documentElement.style.overflow="hidden";setTimeout(()=>P.querySelector(".box").focus({preventScroll:true}),60)};const pc=()=>{P.hidden=true;if(M.hidden)document.documentElement.style.overflow="";pb&&pb.focus&&pb.focus()};document.querySelectorAll("[data-pp]").forEach(a=>a.addEventListener("click",po));P.querySelectorAll("[data-px]").forEach(b=>b.addEventListener("click",pc));addEventListener("keydown",e=>{if(e.key==="Escape"&&!P.hidden){pc();e.stopImmediatePropagation()}},true)}}{const C=$("ck");if(C){const K="mm_consent",Y=365*864e5;let tm=0;const rd=()=>{try{const v=JSON.parse(localStorage.getItem(K)||"null");return v&&v.v===1&&Date.now()-v.t<Y?v:null}catch(e){return null}};const ap=a=>{window.mmConsent={analytics:!!a};try{dispatchEvent(new CustomEvent("mm-consent",{detail:window.mmConsent}))}catch(e){}};const sh=()=>{clearTimeout(tm);C.hidden=false;requestAnimationFrame(()=>requestAnimationFrame(()=>C.classList.add("on")))};const hd=()=>{C.classList.remove("on");tm=setTimeout(()=>{C.hidden=true},350)};C.querySelectorAll("[data-cka]").forEach(b=>b.addEventListener("click",()=>{const a=b.dataset.cka==="1";try{localStorage.setItem(K,JSON.stringify({v:1,a,t:Date.now()}))}catch(e){}ap(a);hd()}));document.querySelectorAll("[data-ckset]").forEach(l=>l.addEventListener("click",e=>{e.preventDefault();sh()}));const sv=rd();if(sv)ap(sv.a);else{window.mmConsent={analytics:false};tm=setTimeout(sh,1200)}}}window.__askOpen=open})();
+</script>
+</body></html>
